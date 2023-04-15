@@ -1,0 +1,16 @@
+<div class="container" >
+<div  class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img [src]="imgSrc" class="d-block w-100" alt="...">
+      </div>
+      
+    </div>
+   
+  </div>
+
+  <input class="btn btn-primary"  type="button" (click)="prev()" value="prev">
+  <input class="btn btn-primary" type="button" (click)="next()" value="next">
+  <input class="btn btn-primary"  type="button" (click)="slide()" value="slide">
+  <input class="btn btn-primary"  type="button" (click)="stop()" value="stop">
+</div>
