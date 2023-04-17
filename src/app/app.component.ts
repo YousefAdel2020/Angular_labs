@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myfirstapp';
+  Students:{name:string, age:string}[] = [];
+  getData(data:any)
+  {
+    this.Students.push(data);
+  }
 }

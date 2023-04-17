@@ -1,2 +1,6 @@
-<app-first></app-first>
-<app-slider></app-slider>
+<!-- <app-first></app-first>
+<app-slider></app-slider> -->
+
+
+<app-register (myEvent)="getData($event)"></app-register>
+<app-students [dataFromRegister]="Students"></app-students>
