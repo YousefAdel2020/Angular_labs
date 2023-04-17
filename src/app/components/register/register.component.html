@@ -1,0 +1,13 @@
+<div class="form">
+    <input type="text" placeholder="Name" [(ngModel)]="usrName"    />
+    <input type="text" placeholder="Age"  [(ngModel)]="usrAge"    />
+
+    <div style="text-align: center; color: rgb(71, 255, 47);" *ngIf="+usrAge<40 && +usrAge>20">
+      <p>Age Valid</p>
+    </div>
+    <div style="text-align: center; color: red;" *ngIf="(+usrAge>=40 || +usrAge<=20)&&usrAge ">
+        <p>Age Not Valid</p>
+      </div>
+    <input type="button" value="ADD" (click)="Add()"/>
+  </div>
+  
